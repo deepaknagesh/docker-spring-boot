@@ -1,0 +1,11 @@
+version: '2'
+services:
+    spring-boot-example1:
+        container_name: spring-boot-example1
+        build:
+            context: .
+        image: spring-boot-example1:latest
+        expose:
+            - 8080
+        ports:
+            - 8080:8080
